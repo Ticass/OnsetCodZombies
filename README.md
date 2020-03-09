@@ -4,7 +4,7 @@ MMO RPG Style Gamemode for onset in Lua
 I am still learning how to code in lua, and have just started a coding bootcamp.
 
 # Planned Features
-⋅⋅* Level System.
+  * Level System.
 
 -Quest System
 
