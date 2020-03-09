@@ -3,7 +3,7 @@ MMO RPG Style Gamemode for onset in Lua
 
 I am still learning how to code in lua, and have just started a coding bootcamp.
 
-#To do
+# To do
 -Level System
 
 -Quest System
