@@ -6,33 +6,33 @@ I am still learning how to code in lua, and have just started a coding bootcamp.
 # Planned Features
   * Level System.
 
--Quest System
+ * -Quest System
 
--Hud
+ * -Hud
 
--Weapon Shops
+ * -Weapon Shops
 
--Npc spawn areas (Like monsters and such)
+* -Npc spawn areas (Like monsters and such)
 
--Spells
+* -Spells
 
--Currency
+* -Currency
 
--Inventory System
+* -Inventory System
 
--AI System for the Npcs
+* -AI System for the Npcs
 
--Player Trading
+* -Player Trading
 
--pvp Arena
+* -pvp Arena
 
--Gathering System
+* -Gathering System
 
--skill tree
+* -skill tree
 
--Boss Battles
+* -Boss Battles
 
--Housing
+* -Housing
 
 
 
