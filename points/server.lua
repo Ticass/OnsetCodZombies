@@ -60,7 +60,12 @@ AddFunctionExport("ViewBalance", ViewBalance)
 
 function RemovePlayerMoney(player, amount)
     for k,v in pairs(survivor) do
-        if v.id == player then 
+        if tonumber(amount) > v.balance then
+            AddPlayerChat(player, "Not Enough Points")
+            return false
+        end
+
+        if v.id == player and tonumber(amount) < v.balance then
             v.balance = v.balance - tonumber(amount)
             AddPlayerChat(player, "You were removed $"..amount.." from your account, you now have $"..v.balance )
         end
@@ -71,7 +76,7 @@ AddFunctionExport("RemovePlayerMoney", RemovePlayerMoney)
 
 
 
-AddRemoteEvent("OnPlayerGoBroke", function(player, balance) --To fix
+function OnPlayerGoBroke(player, balance) --To fix
     for k,v in pairs(survivor) do
         if v.balance <= 0 then
             AddPlayerChat("You are broke, you had to sell a kidney to substain !")
@@ -83,7 +88,9 @@ AddRemoteEvent("OnPlayerGoBroke", function(player, balance) --To fix
             return
         end
     end
-end)
+end
+
+function OnPlayerChatCommand
 
 
 
