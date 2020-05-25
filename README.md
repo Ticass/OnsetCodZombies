@@ -1,44 +1,26 @@
-# OnsetOnline
-MMO RPG Style Gamemode for onset in Lua
+# Cod Zombies in onset
+So I wanted to make a cod zombie styled gamemode for onset and I started doing it, if you wanna help just hmu 
 
-I am still learning how to code in lua, and have just started a coding bootcamp.
+## TO DO
 
-# Planned Features
-  * Level System.
+* Arena
 
- * -Quest System
+* Fix the SetPlayerGun
 
- * -Hud
+* AI System (For the zombies)
 
- * -Weapon Shops
+* MysteryBox
 
-* -Npc spawn areas (Like monsters and such)
+* revive system
 
-* -Spells
+* First Person Camera
 
-* -Currency
+* Buyable weapons on the walls
 
-* -Inventory System
-
-* -AI System for the Npcs
-
-* -Player Trading
-
-* -pvp Arena
-
-* -Gathering System
-
-* -skill tree
-
-* -Boss Battles
-
-* -Housing
+* Powerups (Juggernaut etc...)
 
 
+## FINISHED
 
-And much more....
+* Currency System (points)
 
-
-# Want to Help ?
-I am still learning Lua, I am a junior front end dev, and I am looking for People who can mod Mainly, I need custom assets and models.
-Just send me a message if you want to get on the project with me and send me your github :)
