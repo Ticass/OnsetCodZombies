@@ -5,10 +5,6 @@ So I wanted to make a cod zombie styled gamemode for onset and I started doing i
 
 * Arena
 
-* Fix the SetPlayerGun
-
-* AI System (For the zombies)
-
 * MysteryBox
 
 * revive system
@@ -17,11 +13,30 @@ So I wanted to make a cod zombie styled gamemode for onset and I started doing i
 
 * Buyable weapons on the walls
 
-* Powerups (Juggernaut etc...)
+* Perks (Juggernaut etc...)
+
+* Pack A Punch
+
+* Power (Electricity)
+
+* Powerups
+
+* SQL backend
+
+* External API
+
+
+## IN PROGRESS
+
+* AI System (For the zombies)
 
 ## FINISHED
 
+* Mystery box
+
 * Currency System (points)
+
+* Fix the SetPlayerGun
 
 ## STABLE AND BETA BRANCHES
 
@@ -43,6 +58,8 @@ So I wanted to make a cod zombie styled gamemode for onset and I started doing i
 * ViewBalance(player, balance) **/balance**
 
 * RemovePlayerMoney(player, amount) **/removemoney 200**
+
+* BuyMysteryBox(player, price) **/box** **(Costs $950)**
 
 
 ### Wanna help ?
