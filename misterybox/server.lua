@@ -1,12 +1,12 @@
 local function OnPackageStart()
-    print("Mystery Box has been loaded")
+    print("Mistery Box has been loaded")
 end
 
 
 Currency = ImportPackage("points")
 
 
-mysterybox = {
+Misterybox = {
     {
         id = 1,
         price = 950,
@@ -17,28 +17,29 @@ mysterybox = {
 
 
 
-function BuyMysteryBox(player)
-    for k,v in pairs(mysterybox) do
+
+
+function BuyMisteryBox(player)
+    for k,v in pairs(Misterybox) do
         if v.used == v.maxuses then
-            return AddPlayerChat(player, "Not Enough Cash")
+            return AddPlayerChat(player, "Max uses !")
         end
     if v.id == player and v.used < v.maxuses then
+        Currency.AcceptDeny(player, v.price)
         Currency.RemovePlayerMoney(player, v.price)
-        AddPlayerChat(player, "Please Wait For The Mystery Box To Open")
+        AddPlayerChat(player, "Please Wait For The Mistery Box To Open")
         for i=1,19 do 
             weprng = i - math.random( 1, 18 )
         end            
         PlayerWeapon = SetPlayerWeapon(player, weprng, 250, true, 1, true)
-        AddPlayerChat(player,"The Mystery Box Gave you the weapon number: "..weprng)
+        AddPlayerChat(player,"The Mistery Box Gave you the weapon number: "..weprng)
         v.used = v.used + 1
         end
     end
 end
-AddEvent("BuyMysteryBox", BuyMysteryBox)
-AddCommand("box", BuyMysteryBox)
-
-
-
+AddEvent("BuyMisteryBox", BuyMisteryBox)
+AddCommand("box", BuyMisteryBox)
+AddFunctionExport("BuyMisteryBox", BuyMisteryBox)
 
 
 
@@ -50,8 +51,8 @@ AddCommand("box", BuyMysteryBox)
 
 --DEBUGGING SECTION
 function Debug(player)
-for k,v in pairs(mysterybox) do 
-    print(weprng)
+for k,v in pairs(Misterybox) do 
+    print("allo")
     end
 end
 AddCommand("debug", Debug)
