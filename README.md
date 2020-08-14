@@ -5,8 +5,6 @@ So I wanted to make a cod zombie styled gamemode for onset and I started doing i
 
 * Arena
 
-* AI System (For the zombies)
-
 * MysteryBox
 
 * revive system
@@ -23,12 +21,18 @@ So I wanted to make a cod zombie styled gamemode for onset and I started doing i
 
 * Powerups
 
+* SQL backend
+
+* External API
+
 
 ## IN PROGRESS
 
-* MysteryBox
+* AI System (For the zombies)
 
 ## FINISHED
+
+* Mystery box
 
 * Currency System (points)
 
