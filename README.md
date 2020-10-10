@@ -1,5 +1,5 @@
 # Cod Zombies in onset
-So I wanted to make a cod zombie styled gamemode for onset and I started doing it, if you wanna help just hmu 
+So I wanted to learn LUA, and onset was the perfect game for me, I started this gamemode when I knew nothing about Lua. and I learned :)
 
 ## TO DO
 
