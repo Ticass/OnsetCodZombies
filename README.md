@@ -5,8 +5,6 @@ So I wanted to learn LUA, and onset was the perfect game for me, I started this 
 
 * Arena
 
-* MysteryBox
-
 * revive system
 
 * First Person Camera
@@ -17,22 +15,26 @@ So I wanted to learn LUA, and onset was the perfect game for me, I started this 
 
 * Pack A Punch
 
-* Power (Electricity)
-
-* Powerups
-
 * SQL backend
 
 * External API
+
+* HUD
 
 
 ## IN PROGRESS
 
 * AI System (For the zombies)
 
+* Mystery box
+
+* Pickups
+
+* Power
+
 ## FINISHED
 
-* Mystery box
+* Zombies (Super Early State)
 
 * Currency System (points)
 
@@ -44,23 +46,13 @@ So I wanted to learn LUA, and onset was the perfect game for me, I started this 
 
 * The branch called **"dev"** will be exclusively reserved for developement.
 
-* The branch called **"beta"** will be used for new untested updates and patches, it is not reccomended to use it unless you know what you are doing because it will frequently contain uncompleted, pointless or broken code. 
-
-* The branch called **"Unstable"** will be the latest release of the gamemode "raw" what I mean by that is that the code works but it's not optimised. 
-
-
 ## AVAIALBLE FUNCTIONS AND COMMANDS
 
-* AddPlayerMoney(player, amount) **/addmoney 200**
+* /add (player, amount)
 
-* SetPlayerMoney(player,amount) **/setmoney 200**
+* /remove (player, amount)
 
-* ViewBalance(player, balance) **/balance**
-
-* RemovePlayerMoney(player, amount) **/removemoney 200**
-
-* BuyMysteryBox(player, price) **/box** **(Costs $950)**
-
+> More api docs to come later
 
 ### Wanna help ?
 
