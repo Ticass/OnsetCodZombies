@@ -1,60 +1,46 @@
-local function OnPackageStart()
-    print("Mistery Box has been loaded")
+
+MetaObjects = ImportPackage("metaobjects")
+
+
+
+
+
+
+function CreateMysterBoxObject()
+    boxObject = CreateObject(1, 130482.0234375, 80778.4765625, 1502.5679931641)
+    SetObjectScale(boxObject, 0.49996739625931, 2.4999985694885, 0.69998675584793)
+    SetObjectTexture(boxObject, "misterybox/mbox.jpg")
+end
+
+function GetBoxDistance(player, boxObject)
+    for k,v in pairs(Account) do
+        if v.id == GetPlayersInRange3D(130482.0234375, 80778.4765625, 1502.5679931641, 300) then
+            AddPlayerChat(player, "Press E To Use The Mistery Box")
+            print(v.id.." Used The misterybox")
+        end
+    end
 end
 
 
-Currency = ImportPackage("points")
-
-
-Misterybox = {
-    {
-        id = 1,
-        price = 950,
-        used = 0,
-        maxuses = 9
-    }
-}
-
-
+function PlayAnimation()
+    for i=2,21 do 
+        animRNG = i - math.random( 2, 21 )
+        animGun = CreateObject(animRNG, 130487.0859375, 80780.3359375, 1551.5791015625)
+        Delay(1000, CreateObject, animGun)
+        Delay(1000, DestroyObject, animGun)
+    end
+end
 
 
 
 function BuyMisteryBox(player)
-    for k,v in pairs(Misterybox) do
-        if v.used == v.maxuses then
-            return AddPlayerChat(player, "Max uses !")
-        end
-    if v.id == player and v.used < v.maxuses then
-        Currency.AcceptDeny(player, v.price)
-        Currency.RemovePlayerMoney(player, v.price)
-        AddPlayerChat(player, "Please Wait For The Mistery Box To Open")
-        for i=1,19 do 
-            weprng = i - math.random( 1, 18 )
-        end            
-        PlayerWeapon = SetPlayerWeapon(player, weprng, 250, true, 1, true)
-        AddPlayerChat(player,"The Mistery Box Gave you the weapon number: "..weprng)
-        v.used = v.used + 1
-        end
-    end
+
 end
-AddEvent("BuyMisteryBox", BuyMisteryBox)
+AddRemoteEvent("BuyBox", BuyMisteryBox)
 AddCommand("box", BuyMisteryBox)
-AddFunctionExport("BuyMisteryBox", BuyMisteryBox)
 
 
 
 
-
-
-
-
-
---DEBUGGING SECTION
-function Debug(player)
-for k,v in pairs(Misterybox) do 
-    print("allo")
-    end
-end
-AddCommand("debug", Debug)
 
 
